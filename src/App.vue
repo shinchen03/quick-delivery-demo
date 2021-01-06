@@ -1,14 +1,22 @@
 <template>
  <el-container>
+   <head>
+   <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+   </head>
    <el-header>
     <TopBar/>
    </el-header>
-   <el-main><HelloWorld msg="Welcome to Your Vue.js App"/></el-main>
+   <el-main style="margin-top:50px"><Login/></el-main>
   </el-container>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Login from './components/HelloWorld.vue'
 import TopBar from './components/TopBar.vue'
 import Vue from 'vue'
 import { Button, Select } from 'element-ui'
@@ -26,7 +34,7 @@ Vue.use(Element)
 export default {
   name: 'app',
   components: {
-    HelloWorld,
+    Login,
     TopBar
   }
 }
